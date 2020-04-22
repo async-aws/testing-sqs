@@ -1,28 +1,15 @@
-# Fake SQS [![Build Status](https://api.travis-ci.org/iain/fake_sqs.svg?branch=master)](http://travis-ci.org/iain/fake_sqs) [![Gem Version](https://badge.fury.io/rb/fake_sqs.svg)](https://badge.fury.io/rb/fake_sqs)
+# Testing SQS
 
-Fake SQS is a lightweight server that mocks the Amazon SQS API.
+Fake SQS is a lightweight server that mocks the Amazon SQS API in a Docker container.
 
-It is extremely useful for testing SQS applications in a sandbox environment without actually
-making calls to Amazon, which not only requires a network connection, but also costs
-money.
+This project is merge of:
+- [fake_sqs](https://github.com/iain/fake_sqs) (forked)
+- [docker-fake-sqs](https://github.com/feathj/docker-fake-sqs)
+- unerged PR:
+-  - https://github.com/iain/fake_sqs/pull/59
 
-Many features are supported and if you miss something, open a pull.
+## Usage
 
-## Installation
-
-```
-gem install fake_sqs
-```
-
-## Running
-
-```
-fake_sqs --database /path/to/database.yml
-```
-
-## Development
-
-```
-bundle install
-rake
+```cli
+docker run -rm -p 9494:9494 async-aws/testing-sqs
 ```
