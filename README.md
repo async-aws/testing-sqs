@@ -6,7 +6,7 @@ This project is merge of:
 - [fake_sqs](https://github.com/iain/fake_sqs) (forked)
 - [docker-fake-sqs](https://github.com/feathj/docker-fake-sqs)
 - unmerged PR:
--  - https://github.com/iain/fake_sqs/pull/59
+   - https://github.com/iain/fake_sqs/pull/59
 
 ## Usage
 
